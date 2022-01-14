@@ -2,11 +2,6 @@
   margin-left: 24px;
 }
 
-svg {
-  vertical-align: middle;
-  // margin-right: 4px;
-  margin: 0 4px;
-}
 .hexi-btn {
   box-sizing: border-box;
   display: inline-block;
@@ -29,16 +24,20 @@ svg {
     color: #409eff;
     border-color: rgb(198, 226, 255);
     background-color: rgb(236, 245, 255);
+    svg {
+      fill: #409eff;
+    }
   }
 
   &:active {
     color: rgb(58, 142, 230);
     border-color: rgb(58, 142, 230);
+    svg {
+      fill: #409eff;
+    }
   }
 }
-.hexi-btn [class*='hexi-icon-ri-'] + span {
-  margin-left: 5px;
-}
+
 .is-disabled,
 .is-disabled:hover,
 .is-disabled:focus {
@@ -53,14 +52,20 @@ svg {
   background-color: #409eff;
   border-color: #409eff;
 
+  svg {
+    fill: #fff;
+  }
   &:hover {
     color: #fff;
     background: rgb(102, 177, 255);
     border-color: rgb(102, 177, 255);
+
+    svg {
+      fill: #fff;
+    }
   }
 
   &:active {
-    color: #fff;
     background: rgb(58, 142, 230);
     border-color: rgb(58, 142, 230);
   }
@@ -83,6 +88,9 @@ svg {
     color: #fff;
     background: #85ce61;
     border-color: #85ce61;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:active {
@@ -110,6 +118,9 @@ svg {
     color: #fff;
     background: #ebb563;
     border-color: #ebb563;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:active {
@@ -137,6 +148,10 @@ svg {
     color: #fff;
     background: #f78989;
     border-color: #f78989;
+
+    svg {
+      fill: #fff;
+    }
   }
 
   &:active {
