@@ -1,0 +1,171 @@
+.hexi-btn + .hexi-btn {
+  margin-left: 24px;
+}
+
+.hexi-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  outline: 0;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+
+  &:hover {
+    color: #409eff;
+    border-color: rgb(198, 226, 255);
+    background-color: rgb(236, 245, 255);
+  }
+
+  &:active {
+    color: rgb(58, 142, 230);
+    border-color: rgb(58, 142, 230);
+  }
+}
+.hexi-btn [class*="hexi-icon-ri-"] + span {
+  margin-left: 5px;
+}
+.is-disabled,
+.is-disabled:hover,
+.is-disabled:focus {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+}
+.hexi-btn-primary {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+
+  &:hover {
+    color: #fff;
+    background: rgb(102, 177, 255);
+    border-color: rgb(102, 177, 255);
+  }
+
+  &:active {
+    color: #fff;
+    background: rgb(58, 142, 230);
+    border-color: rgb(58, 142, 230);
+  }
+}
+
+.hexi-btn-primary.is-disabled,
+.hexi-btn-primary.is-disabled:hover,
+.hexi-btn-primary.is-disabled:focus,
+.hexi-btn-primary.is-disabled:active {
+  color: #fff;
+  background-color: rgb(160, 207, 255);
+  border-color: rgb(160, 207, 255);
+}
+
+.hexi-btn-success {
+  color: #fff;
+  background-color: #67c23a;
+  border-color: #67c23a;
+  &:hover {
+    color: #fff;
+    background: #85ce61;
+    border-color: #85ce61;
+  }
+
+  &:active {
+    color: #fff;
+    background: #5daf34;
+    border-color: #5daf34;
+  }
+}
+
+.hexi-btn-success.is-disabled,
+.hexi-btn-success.is-disabled:hover,
+.hexi-btn-success.is-disabled:focus,
+.hexi-btn-success.is-disabled:active {
+  color: #fff;
+  background-color: #b3e19d;
+  border-color: #b3e19d;
+}
+
+.hexi-btn-warning {
+  color: #fff;
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+
+  &:hover {
+    color: #fff;
+    background: #ebb563;
+    border-color: #ebb563;
+  }
+
+  &:active {
+    color: #fff;
+    background: #cf9236;
+    border-color: #cf9236;
+  }
+}
+
+
+.hexi-btn-warning.is-disabled,
+.hexi-btn-warning.is-disabled:hover,
+.hexi-btn-warning.is-disabled:focus,
+.hexi-btn-warning.is-disabled:active {
+  color: #fff;
+  background-color: #f3d19e;
+  border-color: #f3d19e;
+}
+
+.hexi-btn-danger {
+  color: #fff;
+  background-color: #f56c6c;
+  border-color: #f56c6c;
+
+  &:hover {
+    color: #fff;
+    background: #f78989;
+    border-color: #f78989;
+  }
+
+  &:active {
+    color: #fff;
+    background: #dd6161;
+    border-color: #dd6161;
+  }
+}
+
+.hexi-btn-danger.is-disabled,
+.hexi-btn-danger.is-disabled:hover,
+.hexi-btn-danger.is-disabled:focus,
+.hexi-btn-danger.is-disabled:active {
+  color: #fff;
+  background-color: #fab6b6;
+  border-color: #fab6b6;
+}
+
+.hexi-btn-small,
+.hexi-btn-medium {
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.hexi-btn-large {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.hexi-btn-medium {
+  padding: 9px 15px;
+}
+
+.hexi-btn-small {
+  padding: 7px 15px;
+}

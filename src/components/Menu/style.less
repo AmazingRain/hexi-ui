@@ -1,0 +1,157 @@
+.hexi-menu {
+  * {
+    box-sizing: border-box;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 0;
+  margin: 0;
+
+  .hexi-menu-item {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 60px;
+    color: #909399;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: 0;
+      background-color: rgb(236, 245, 255);
+    }
+
+    &.is-active {
+      color: #409eff;
+      border-bottom: 2px solid #409eff;
+    }
+
+    &.is-disabled {
+      opacity: 0.25;
+      cursor: not-allowed;
+      background: 0 0 !important;
+    }
+  }
+
+  .hexi-submenu {
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+    color: #909399;
+    padding: 0 24px;
+    &:hover {
+      background-color: rgb(236, 245, 255);
+    }
+    .hexi-submenu-title {
+      cursor: pointer;
+    }
+  }
+
+  &.hexi-menu-horizontal {
+    .hexi-menu-item {
+      display: flex;
+      flex-direction: row;
+      padding: 0 24px;
+      &.is-active {
+        color: #409eff;
+        border: none;
+      }
+    }
+    .hexi-submenu {
+      position: relative;
+      display: flex;
+      padding: 0;
+      &.is-active {
+        color: #409eff;
+        border-bottom: 2px solid #409eff;
+      }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .hexi-submenu-title {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 24px;
+      span {
+        margin-right: 8px;
+      }
+    }
+    .hexi-submenu-content {
+      width: 100%;
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .hexi-submenu-content.is-open {
+      display: block;
+    }
+  }
+
+  &.hexi-menu-vertical {
+    flex-direction: column;
+
+    .hexi-menu-item {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      &:focus,
+      &:hover {
+        outline: 0;
+        background-color: rgb(236, 245, 255);
+      }
+
+      &.is-active {
+        border-right: 2px solid #409eff;
+        background-color: rgb(236, 245, 255);
+        color: #409eff;
+      }
+    }
+
+    .hexi-submenu {
+      height: 100%;
+      padding: 0;
+      &:hover {
+        background-color: #fff;
+      }
+      .hexi-submenu-title {
+        padding: 0 24px;
+        &.is-active {
+          color: #409eff;
+        }
+      }
+
+      .hexi-menu-item {
+        padding-left: 24px;
+        
+        &:hover {
+          color: #409eff;
+        }
+        &.is-active {
+          color: #409eff;
+        }
+      }
+     
+      .hexi-submenu-content {
+        display: none;
+      }
+
+      .hexi-submenu-content.is-open {
+        display: block;
+      }
+    }
+  }
+}
