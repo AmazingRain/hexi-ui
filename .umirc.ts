@@ -13,6 +13,6 @@ export default defineConfig({
   },
   base: '/hexi-ui',
   publicPath: '/hexi-ui/',
-
+  exportStatic: {},
   // more config: https://d.umijs.org/config
 });
