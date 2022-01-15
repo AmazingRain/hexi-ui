@@ -11,5 +11,8 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src/components'],
   },
+  base: '/hexi-ui',
+  publicPath: '/hexi-ui/',
+
   // more config: https://d.umijs.org/config
 });
