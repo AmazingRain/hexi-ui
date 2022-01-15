@@ -18,6 +18,8 @@
   .hexi-menu-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     padding: 0 20px;
     text-align: center;
@@ -31,9 +33,16 @@
       background-color: rgb(236, 245, 255);
     }
 
+    svg {
+      color: #909399;
+    }
     &.is-active {
       color: #409eff;
       border-bottom: 2px solid #409eff;
+
+      svg {
+        fill: #409eff;
+      }
     }
 
     &.is-disabled {
@@ -58,10 +67,18 @@
   }
 
   &.hexi-menu-horizontal {
+    border-bottom: solid 1px #e6e6e6;
     .hexi-menu-item {
       display: flex;
       flex-direction: row;
+
       padding: 0 24px;
+      &:hover {
+        color: #409eff;
+        svg {
+          fill: #409eff;
+        }
+      }
       &.is-active {
         color: #409eff;
         border: none;
@@ -81,12 +98,7 @@
     }
 
     .hexi-submenu-title {
-      display: flex;
-      justify-content: space-between;
       padding: 0 24px;
-      span {
-        margin-right: 8px;
-      }
     }
     .hexi-submenu-content {
       width: 100%;
@@ -94,6 +106,17 @@
       position: absolute;
       top: 60px;
       left: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+
+      .hexi-menu-item {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
 
     .hexi-submenu-content.is-open {
@@ -124,10 +147,11 @@
     .hexi-submenu {
       height: 100%;
       padding: 0;
-      &:hover {
-        background-color: #fff;
-      }
+
       .hexi-submenu-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0 24px;
         &.is-active {
           color: #409eff;
@@ -136,7 +160,7 @@
 
       .hexi-menu-item {
         padding-left: 24px;
-        
+
         &:hover {
           color: #409eff;
         }
@@ -144,13 +168,14 @@
           color: #409eff;
         }
       }
-     
+
       .hexi-submenu-content {
         display: none;
       }
 
       .hexi-submenu-content.is-open {
         display: block;
+        background-color: #fafafa;
       }
     }
   }
