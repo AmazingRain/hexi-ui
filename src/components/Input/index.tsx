@@ -1,9 +1,4 @@
-import React from "react";
+import Input from './Input';
+import TextArea from './TextArea';
 
-const Input: React.FC = () => {
-    return (
-        <input type="text" />
-    )
-};
-
-export default Input;
+export { Input, TextArea };

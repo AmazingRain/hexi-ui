@@ -1,7 +1,7 @@
 import React from 'react';
 import svgs from './remixicon.symbol.svg';
 import './style.less';
-
+// let svgs = 'https://xupt-tradingplatform.oss-cn-beijing.aliyuncs.com/2022/01/15/47ef2c02288248f6b96269787ba7b0e0remixicon.symbol.svg'
 interface IIconProps {
   /**
    * 可以这样写属性描述
