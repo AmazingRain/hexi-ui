@@ -1,0 +1,18 @@
+.hexi-tag {
+  display: inline-block;
+  position: relative;
+  padding: 0px 5px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 8.5px;
+  background-color: inherit;
+  box-shadow: 5px 1px 7px 0px #cfcfcf;
+  &::after {
+    position: absolute;
+    content: ' ';
+    border: 8.5px solid transparent;
+    right: -16px;
+    border-left-color: inherit;
+  }
+}
