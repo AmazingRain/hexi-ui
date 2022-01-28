@@ -1,3 +1,7 @@
+# Tag
+
+## 基本使用
+
 ```tsx
 import React from 'react';
 import { Tag } from 'hexi-ui';
@@ -10,3 +14,5 @@ export default () => (
   </>
 );
 ```
+
+<API></API>
