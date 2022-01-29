@@ -5,3 +5,4 @@ export { Menu, MenuItem, SubMenu } from './components/Menu';
 export { Tabs, TabItem } from './components/Tabs';
 export { Input, TextArea } from './components/Input';
 export { default as Tag } from './components/Tag';
+export { Radio, RadioGroup } from './components/Radio';
