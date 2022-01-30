@@ -11,15 +11,21 @@ const RadioGroup: React.FC<IRadioGroupProps> = (props) => {
   const renderChildren = () => {
     return React.Children.map(children, (child, index) => {
       const childElement = child as React.FunctionComponentElement<IRadioProps>;
-      const props = childElement.props;
-      return React.cloneElement(childElement, {
-        checked: activeValue === props.value,
-        onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-          onChange?.(e);
-          props.onChange?.(e);
-          setActiveValue(e.target.value);
-        },
-      });
+      if (childElement.type.displayName === 'Radio') {
+        const props = childElement.props;
+        return React.cloneElement(childElement, {
+          checked: activeValue === props.value,
+          onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+            onChange?.(e);
+            props.onChange?.(e);
+            setActiveValue(e.target.value);
+          },
+        });
+      } else {
+        console.warn(
+          'Warning: The child component of RadioGroup must be Radio',
+        );
+      }
     });
   };
 

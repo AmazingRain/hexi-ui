@@ -56,4 +56,5 @@ const Radio: React.FC<IRadioProps> = (props) => {
   );
 };
 
+Radio.displayName = 'Radio';
 export default Radio;
